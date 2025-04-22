@@ -1,0 +1,88 @@
+
+================================================================================
+The Numerical Methods team reserves its right to change your final score in case
+anything suspicious is found in the source code.
+
+Please refer to the course's guidelines for more info.
+================================================================================
+
+Task 1. Markov is coming...
+---------------------------
+
+[test_parse1]: 1p / 1p (OK)
+[test_parse2]: 1p / 1p (OK)
+[test_parse3]: 1p / 1p (OK)
+[test_adj1]: 1p / 1p (OK)
+[test_adj2]: 1p / 1p (OK)
+[test_adj3]: 1p / 1p (OK)
+[test_link1]: 1p / 1p (OK)
+[test_link2]: 1p / 1p (OK)
+[test_link3]: 1p / 1p (OK)
+[test_Jacobi1]: 2p / 2p (OK)
+[test_Jacobi2]: 2p / 2p (OK)
+[test_Jacobi3]: 2p / 2p (OK)
+[test_perform1]: 0p / 2p (WA)
+[test_perform2]: 0p / 2p (WA)
+[test_perform3]: 0p / 2p (WA)
+[test_heuristic1]: 0p / 3p (WA)
+[test_heuristic2]: 0p / 3p (WA)
+[test_heuristic3]: 0p / 3p (WA)
+[test_decode1]: 3p / 3p (OK)
+[test_decode2]: 3p / 3p (OK)
+[test_decode3]: 4p / 4p (OK)
+
+=> TOTAL: 25p / 40p
+
+
+Task 2. Linear Regression
+-------------------------
+
+[get_data1]: 0p / 1p (WA)
+[get_data2]: 0p / 1p (WA)
+[get_data3]: 0p / 1p (WA)
+[get_data4]: 0p / 2p (WA)
+[get_csv_data]: 0p / 2p (WA)
+[prepare_data1]: 0p / 1p (WA)
+[prepare_data2]: 0p / 1p (WA)
+[prepare_data3]: 0p / 1p (WA)
+[prepare_data4]: 0p / 2p (WA)
+[prepare_csv_data]: 0p / 2p (WA)
+[cost_function1]: 0p / 2p (WA)
+[cost_function2]: 0p / 2p (WA)
+[cost_function3]: 0p / 2p (WA)
+[gradient_data]: 0p / 5p (WA)
+[normal_eq_data1]: 0p / 2p (WA)
+[normal_eq_data2]: 0p / 2p (WA)
+[normal_eq_data3]: 0p / 3p (WA)
+[lasso_function1]: 0p / 1p (WA)
+[lasso_function2]: 0p / 1p (WA)
+[lasso_function3]: 0p / 2p (WA)
+[ridge_function1]: 0p / 1p (WA)
+[ridge_function2]: 0p / 1p (WA)
+[ridge_function3]: 0p / 2p (WA)
+
+=> TOTAL: 0p / 40p
+
+
+Task 3. MNIST 101
+-----------------
+
+[test_load1]: 0p / 1p (WA)
+[test_load2]: 0p / 1p (WA)
+[test_split1]: 0p / 1p (WA)
+[test_split2]: 0p / 2p (WA)
+[test_initialize1]: 0p / 2p (WA)
+[test_initialize2]: 0p / 2p (WA)
+[test_initialize3]: 0p / 2p (WA)
+[test_cost1]: 0p / 2p (WA)
+[test_cost2]: 0p / 2p (WA)
+[test_cost3]: 0p / 2p (WA)
+[test_predict1]: 0p / 1p (WA)
+[test_predict2]: 0p / 2p (WA)
+
+=> TOTAL: 0p / 20p
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+FINAL SCORE: 25p / 100p
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+
