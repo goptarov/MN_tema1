@@ -21,17 +21,17 @@ Task 1. Markov is coming...
 [test_Jacobi1]: 2p / 2p (OK)
 [test_Jacobi2]: 2p / 2p (OK)
 [test_Jacobi3]: 2p / 2p (OK)
-[test_perform1]: 0p / 2p (WA)
-[test_perform2]: 0p / 2p (WA)
-[test_perform3]: 0p / 2p (WA)
-[test_heuristic1]: 0p / 3p (WA)
-[test_heuristic2]: 0p / 3p (WA)
-[test_heuristic3]: 0p / 3p (WA)
+[test_perform1]: 2p / 2p (OK)
+[test_perform2]: 2p / 2p (OK)
+[test_perform3]: 2p / 2p (OK)
+[test_heuristic1]: 3p / 3p (OK)
+[test_heuristic2]: 3p / 3p (OK)
+[test_heuristic3]: 3p / 3p (OK)
 [test_decode1]: 3p / 3p (OK)
 [test_decode2]: 3p / 3p (OK)
 [test_decode3]: 4p / 4p (OK)
 
-=> TOTAL: 25p / 40p
+=> TOTAL: 40p / 40p
 
 
 Task 2. Linear Regression
@@ -83,6 +83,6 @@ Task 3. MNIST 101
 => TOTAL: 0p / 20p
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-FINAL SCORE: 25p / 100p
+FINAL SCORE: 40p / 100p
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 

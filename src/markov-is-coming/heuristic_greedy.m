@@ -7,7 +7,7 @@ function [path] = heuristic_greedy(start_position, probabilities, Adj)
   visited(start_position) = true;
 
   while !isempty(path)
-    pos = path(end);
+    pos = path(end, 1);
 
     if Adj(pos, pos) == 1
       return;
@@ -16,17 +16,13 @@ function [path] = heuristic_greedy(start_position, probabilities, Adj)
     neigh = find(Adj(pos, 1 : n) == 1 & !visited);
 
     if isempty(neigh)
-      path(end) = [];
+      path(end, 1) = [];
     else
       [~, idx] = max(probabilities(neigh));
       next = neigh(idx);
 
-      if Adj(next, next) == 1;
-        return;
-      endif
-
       visited(next) = true;
-      path(end + 1) = next;
+      path(end + 1, 1) = next;
     endif
   endwhile
 endfunction

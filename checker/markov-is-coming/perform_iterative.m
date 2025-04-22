@@ -14,5 +14,5 @@ function [x, err, steps] = perform_iterative(G, c, x0, tol, max_steps)
     i = i + 1;
   endwhile
 
-  steps = i - 1;
+  steps = i;
 endfunction
