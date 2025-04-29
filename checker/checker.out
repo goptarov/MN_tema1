@@ -37,19 +37,19 @@ Task 1. Markov is coming...
 Task 2. Linear Regression
 -------------------------
 
-[get_data1]: 0p / 1p (WA)
-[get_data2]: 0p / 1p (WA)
-[get_data3]: 0p / 1p (WA)
-[get_data4]: 0p / 2p (WA)
+[get_data1]: 1p / 1p (OK)
+[get_data2]: 1p / 1p (OK)
+[get_data3]: 1p / 1p (OK)
+[get_data4]: 2p / 2p (OK)
 [get_csv_data]: 0p / 2p (WA)
-[prepare_data1]: 0p / 1p (WA)
-[prepare_data2]: 0p / 1p (WA)
-[prepare_data3]: 0p / 1p (WA)
-[prepare_data4]: 0p / 2p (WA)
+[prepare_data1]: 1p / 1p (OK)
+[prepare_data2]: 1p / 1p (OK)
+[prepare_data3]: 1p / 1p (OK)
+[prepare_data4]: 2p / 2p (OK)
 [prepare_csv_data]: 0p / 2p (WA)
-[cost_function1]: 0p / 2p (WA)
-[cost_function2]: 0p / 2p (WA)
-[cost_function3]: 0p / 2p (WA)
+[cost_function1]: 2p / 2p (OK)
+[cost_function2]: 2p / 2p (OK)
+[cost_function3]: 2p / 2p (OK)
 [gradient_data]: 0p / 5p (WA)
 [normal_eq_data1]: 0p / 2p (WA)
 [normal_eq_data2]: 0p / 2p (WA)
@@ -61,7 +61,7 @@ Task 2. Linear Regression
 [ridge_function2]: 0p / 1p (WA)
 [ridge_function3]: 0p / 2p (WA)
 
-=> TOTAL: 0p / 40p
+=> TOTAL: 16p / 40p
 
 
 Task 3. MNIST 101
@@ -83,6 +83,6 @@ Task 3. MNIST 101
 => TOTAL: 0p / 20p
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-FINAL SCORE: 40p / 100p
+FINAL SCORE: 56p / 100p
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 
