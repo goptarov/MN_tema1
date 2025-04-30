@@ -46,7 +46,7 @@ Task 2. Linear Regression
 [prepare_data2]: 1p / 1p (OK)
 [prepare_data3]: 1p / 1p (OK)
 [prepare_data4]: 2p / 2p (OK)
-[prepare_csv_data]: 0p / 2p (WA)
+[prepare_csv_data]: 2p / 2p (OK)
 [cost_function1]: 2p / 2p (OK)
 [cost_function2]: 2p / 2p (OK)
 [cost_function3]: 2p / 2p (OK)
@@ -61,7 +61,7 @@ Task 2. Linear Regression
 [ridge_function2]: 0p / 1p (WA)
 [ridge_function3]: 0p / 2p (WA)
 
-=> TOTAL: 16p / 40p
+=> TOTAL: 18p / 40p
 
 
 Task 3. MNIST 101
@@ -83,6 +83,6 @@ Task 3. MNIST 101
 => TOTAL: 0p / 20p
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-FINAL SCORE: 56p / 100p
+FINAL SCORE: 58p / 100p
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 
