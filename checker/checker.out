@@ -67,22 +67,22 @@ Task 2. Linear Regression
 Task 3. MNIST 101
 -----------------
 
-[test_load1]: 0p / 1p (WA)
-[test_load2]: 0p / 1p (WA)
-[test_split1]: 0p / 1p (WA)
-[test_split2]: 0p / 2p (WA)
-[test_initialize1]: 0p / 2p (WA)
-[test_initialize2]: 0p / 2p (WA)
-[test_initialize3]: 0p / 2p (WA)
+[test_load1]: 1p / 1p (OK)
+[test_load2]: 1p / 1p (OK)
+[test_split1]: 1p / 1p (OK)
+[test_split2]: 2p / 2p (OK)
+[test_initialize1]: 2p / 2p (OK)
+[test_initialize2]: 2p / 2p (OK)
+[test_initialize3]: 2p / 2p (OK)
 [test_cost1]: 0p / 2p (WA)
 [test_cost2]: 0p / 2p (WA)
 [test_cost3]: 0p / 2p (WA)
 [test_predict1]: 0p / 1p (WA)
 [test_predict2]: 0p / 2p (WA)
 
-=> TOTAL: 0p / 20p
+=> TOTAL: 11p / 20p
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-FINAL SCORE: 80p / 100p
+FINAL SCORE: 91p / 100p
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 
