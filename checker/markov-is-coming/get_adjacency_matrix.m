@@ -1,6 +1,6 @@
 function [Adj] = get_adjacency_matrix (Labyrinth)
   [m, n] = size(Labyrinth);
-  Adj = zeros(m*n+2);
+  Adj = sparse(m * n + 2, m * n + 2);
   for i = 1 : m
     for j = 1 : n
       idx = (i - 1) * n + j;

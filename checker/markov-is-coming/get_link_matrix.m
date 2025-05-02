@@ -1,6 +1,6 @@
 function [Link] = get_link_matrix (Labyrinth)
   [m, n] = size(Labyrinth);
-  Link = zeros(m*n+2);
+  Link = sparse(m * n + 2, m * n + 2);
   for i = 1 : m
     for j = 1 : n
       cnt = 0;

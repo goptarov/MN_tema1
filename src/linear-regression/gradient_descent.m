@@ -1,12 +1,15 @@
 function [Theta] = gradient_descent(FeatureMatrix, Y, n, m, alpha, iter)
-  % FeatureMatrix -> the matrix with all training examples
-  % Y -> the vector with all actual values
-  % n -> the number of predictors
-  % m -> the number of trainings
-  % alpha -> the learning rate
-  % iter -> the number of iterations
+  Theta = zeros(n, 1);
+  i = 1;
 
-  % Theta -> the vector of weights
+  while i <= iter
+    prediction = FeatureMatrix * Theta; %vectorul coloana al predictiilor
+    err = prediction - Y; %vectorul erorilor
+    grad = (FeatureMatrix' *  err) / m;
+    Theta = Theta - alpha *  grad;
 
-  % TODO: gradient_descent implementation
+    i = i + 1;
+  endwhile
+
+  Theta = [zeros(1); Theta]; %Adaugam theta0 la inceputul vectorului
 end

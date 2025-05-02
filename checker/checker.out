@@ -41,7 +41,7 @@ Task 2. Linear Regression
 [get_data2]: 1p / 1p (OK)
 [get_data3]: 1p / 1p (OK)
 [get_data4]: 2p / 2p (OK)
-[get_csv_data]: 0p / 2p (WA)
+[get_csv_data]: 2p / 2p (OK)
 [prepare_data1]: 1p / 1p (OK)
 [prepare_data2]: 1p / 1p (OK)
 [prepare_data3]: 1p / 1p (OK)
@@ -50,18 +50,18 @@ Task 2. Linear Regression
 [cost_function1]: 2p / 2p (OK)
 [cost_function2]: 2p / 2p (OK)
 [cost_function3]: 2p / 2p (OK)
-[gradient_data]: 0p / 5p (WA)
-[normal_eq_data1]: 0p / 2p (WA)
-[normal_eq_data2]: 0p / 2p (WA)
-[normal_eq_data3]: 0p / 3p (WA)
-[lasso_function1]: 0p / 1p (WA)
-[lasso_function2]: 0p / 1p (WA)
-[lasso_function3]: 0p / 2p (WA)
-[ridge_function1]: 0p / 1p (WA)
-[ridge_function2]: 0p / 1p (WA)
-[ridge_function3]: 0p / 2p (WA)
+[gradient_data]: 5p / 5p (OK)
+[normal_eq_data1]: 2p / 2p (OK)
+[normal_eq_data2]: 2p / 2p (OK)
+[normal_eq_data3]: 3p / 3p (OK)
+[lasso_function1]: 1p / 1p (OK)
+[lasso_function2]: 1p / 1p (OK)
+[lasso_function3]: 2p / 2p (OK)
+[ridge_function1]: 1p / 1p (OK)
+[ridge_function2]: 1p / 1p (OK)
+[ridge_function3]: 2p / 2p (OK)
 
-=> TOTAL: 18p / 40p
+=> TOTAL: 40p / 40p
 
 
 Task 3. MNIST 101
@@ -83,6 +83,6 @@ Task 3. MNIST 101
 => TOTAL: 0p / 20p
 
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
-FINAL SCORE: 58p / 100p
+FINAL SCORE: 80p / 100p
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
 

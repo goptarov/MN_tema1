@@ -6,15 +6,14 @@ function [Y, InitialMatrix] = parse_csv_file(file_path)
     fid = fopen(file_path, "r");
     head = fgetl(fid); %scapam de prima linie din tabel
 
-    Y = {};
-    InitialMatrix = {};
+    Y = zeros;
 
     line = fgetl(fid); %linia 1
     row = 1; %index pentru linii
     while ischar(line)
       field = strsplit(line, ','); %impare linia
 
-      Y{row, 1} = field{1}; %primul element din field(linie) va merge in Y
+      Y(row, 1) = str2double(field(1)); %primul element din field(linie) va merge in Y
       InitialMatrix(row, :) = field(2:end); % restul merge in InitialMatrix
 
       line = fgetl(fid);%trecem la urmatoarea linie
