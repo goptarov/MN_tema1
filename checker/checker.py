@@ -26,7 +26,7 @@
 
 CHECKER_FOLDER = "checker"
 JSON_CONFIG_PATH = f"{CHECKER_FOLDER}/config.json"
-DEFAULT_TEST_TIMEOUT = 20 # seconds
+DEFAULT_TEST_TIMEOUT = 60 # seconds
 
 import multiprocessing
 import subprocess

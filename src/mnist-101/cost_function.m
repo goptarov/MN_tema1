@@ -9,21 +9,45 @@ function [J, grad] = cost_function(params, X, y, lambda, ...
   %      training example
   % lambda -> the regularization constant/parameter
   % [input|hidden|output]_layer_size -> the sizes of the three layers
-  
+
   % J -> the cost function for the current parameters
   % grad -> a column vector with the same length as params
   % These will be used for optimization using fmincg
-  
-  % TODO: cost_function implementation
+  m = size(y, 1);
+  yMatrix = eye(output_layer_size)(y,:);
 
-  % TODO1: get Theta1 and Theta2 (from params). Hint: reshape
-  
-  % TODO2: Forward propagation
-  
-  % TODO3: Compute the error in the output layer and perform backpropagation
-  
-  % TODO4: Determine the gradients
-  
-  % TODO5: Final J and grad
+  Theta1 = reshape(params(1 : (hidden_layer_size * (input_layer_size + 1))), hidden_layer_size, (input_layer_size + 1));
+  Theta2 = reshape(params((1 + hidden_layer_size * (input_layer_size + 1)) : end), output_layer_size, (hidden_layer_size + 1));
+
+  grad1 = zeros(size(Theta1));
+  grad2 = zeros(size(Theta2));
+
+  %forward propagation
+  a1 = [ones(m, 1) X]; %lucram cu intregile matrice deodata, nu pe randuri.
+  z2 = a1 * Theta1';
+  a2 = sigmoid(z2);
+  a2 = [ones(m, 1) a2];
+  z3 = a2 * Theta2';
+  a3 = sigmoid(z3);
+
+  %functia de cost
+  cost = -yMatrix .* log(a3) - (1 - yMatrix) .* log(1 - a3);
+  J =  1/m * sum(cost(:));
+
+  %J = J + lambda / (2 * m) * (sum(sum(Theta1(:, 2:end) .^ 2)) + sum(sum(Theta2(:, 2:end) .^ 2)));
+
+  %backpropagation
+  d3 = a3 - yMatrix;
+  D2 = d3' * a2;
+  d2 = ((d3 * Theta2) .* (a2 .* (1 - a2)))(:, 2:end);
+  D1 = d2' * a1;
+  D2 = d3' * a2;
+
+  %gradientii
+  grad1 = (1/m) * D1 + lambda/m * Theta1;
+  grad2 = (1/m) * D2 + lambda/m * Theta2;
+
+
+  grad = [grad1(:); grad2(:)];
 
 end
