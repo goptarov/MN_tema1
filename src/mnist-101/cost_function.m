@@ -23,7 +23,7 @@ function [J, grad] = cost_function(params, X, y, lambda, ...
   grad2 = zeros(size(Theta2));
 
   %forward propagation
-  a1 = [ones(m, 1) X]; %lucram cu intregile matrice deodata, nu pe randuri.
+  a1 = [ones(m, 1) X]; %lucram cu intregile matrice deodata, nu pe randuri, pentru eficienta.
   z2 = a1 * Theta1';
   a2 = sigmoid(z2);
   a2 = [ones(m, 1) a2];
@@ -34,20 +34,21 @@ function [J, grad] = cost_function(params, X, y, lambda, ...
   cost = -yMatrix .* log(a3) - (1 - yMatrix) .* log(1 - a3);
   J =  1/m * sum(cost(:));
 
-  %J = J + lambda / (2 * m) * (sum(sum(Theta1(:, 2:end) .^ 2)) + sum(sum(Theta2(:, 2:end) .^ 2)));
-
   %backpropagation
   d3 = a3 - yMatrix;
   D2 = d3' * a2;
-  d2 = ((d3 * Theta2) .* (a2 .* (1 - a2)))(:, 2:end);
+  d2 = ((d3 * Theta2) .* (a2 .* (1 - a2)))(:, 2:end);%sigmoid derivat este a2 .* (1 - a2)
   D1 = d2' * a1;
   D2 = d3' * a2;
 
   %gradientii
-  grad1 = (1/m) * D1 + lambda/m * Theta1;
-  grad2 = (1/m) * D2 + lambda/m * Theta2;
+  Theta1Reg = [zeros(size(Theta1, 1), 1) Theta1(:, 2:end)];
+  Theta2Reg = [zeros(size(Theta2, 1), 1) Theta2(:, 2:end)];
+  %obtinem gradientii folosit Theta1 si Theta2 regularizate
+  grad1 = (1/m) * D1 + lambda/m * Theta1Reg;
+  grad2 = (1/m) * D2 + lambda/m * Theta2Reg;
 
-
+  %compunere grad si regularizare J
   grad = [grad1(:); grad2(:)];
-
+  J = J + (lambda / (2 * m)) * (sum(sum(Theta1(:, 2:end).^2)) + sum(sum(Theta2(:, 2:end).^2)));
 end
